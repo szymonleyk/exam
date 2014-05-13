@@ -1,4 +1,5 @@
 class SearchController < ApplicationController
-  def index
-  end
+def index
+@movie = Tmdb::Movie.find(params[:query])
+end
 end
